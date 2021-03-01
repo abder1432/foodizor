@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Neo Sans Arabic Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neo Sans Arabic Regular'), url('../fonts/Neo Sans Arabic Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neo Sans Arabic Regular'), url('../fonts/NeoSansArabic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neo Sans Arabic Light'), url('../fonts/NeoSansArabicLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neo Sans Arabic Medium'), url('../fonts/NeoSansArabicMedium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neo Sans Arabic Bold'), url('../fonts/NeoSansArabicBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neo Sans Arabic Black'), url('../fonts/NeoSansArabicBlack.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Ultra';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Neo Sans Arabic Ultra'), url('../fonts/NeoSansArabicUltra.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Neo Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fontsNeo Sans Medium'), url('../fonts/Neo_Sans_Medium.woff') format('woff');
+    }
+
+body {
+    position: relative;
+    direction: rtl;
+    text-align: right;
+    overflow: hidden;
+    font-family: 'Neo Sans Arabic Regular', sans-serif;
+}
+a {
+    color: #FFFFFF;
+}
+a:hover,
+a:active,
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a.navbar-brand {
+    color: #FFFFFF;
+}
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 24px;
+    position: relative;
+}
+.navbar-dark .navbar-nav .nav-link, 
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ee2f4e;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #000000;
+}
+.dots {
+    position: fixed;
+    width: 24px;
+    left: 20px;
+    top: 80px
+}
+.dots ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.dots li {
+  margin-bottom: 10px;
+}
+.dots a {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -99999px;
+    padding: 0;
+    margin: 0;
+    border: 3px solid #FFFFFF;
+}
+.dots a.active {
+    background-color: transparent;
+}
+section {
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+section#hero {
+  background-image: url(../images/hero.png);
+}
+section#about {
+    background-image: url(../images/about.png);
+}
+section#contact-us {
+    background-image: url(../images/contact-us.png);
+}
+section#app {
+    background-image: url(../images/download.png);
+}
+section#restaurant {
+    background-image: url(../images/features.png);
+}
+
+.scrolldown {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right:50%;
+    z-index: 99999999;
+    text-align: center;
+    display: block;
+}
+
+.scrolldown i {
+    display: block;
+    font-size: 24px;
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .navbar-nav .nav-link::after {
+        content: '';
+        display: block;
+        background-color: #FFFFFF;
+        height: 12px;
+        width: 1px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -6px;
+    }
+    .navbar-nav .nav-item.last .nav-link::after {
+        display: none;
+    }
+
+}
